@@ -101,6 +101,7 @@ if __name__ == "__main__":
             t = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
             print t + '-- get news'            
             if(max_news == news_label):
+                time.sleep(1800)
                 continue
             
             unread_news,news_label = get_unread_news(news,news_label)  # 这里用到了 news_label 作为标签，检查是否是已读通知
